@@ -1,8 +1,6 @@
 <template>
   <div class="about">
-    <!-- <div class="pt-16 pb-8"> -->
     <BreadCrumbs :levelOne="levelOne" :levelTwo="levelTwo" />
-    <!-- </div> -->
     <AboutHeader />
     <div class="flex flex-col gap-16 py-20 px-[10%]">
       <div class="grid grid-cols-12 gap-16 text-start">
