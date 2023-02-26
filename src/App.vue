@@ -1,14 +1,14 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <pre-nav-bar></pre-nav-bar>
+  <nav-bar></nav-bar>
   <router-view />
 </template>
 
 <style lang="scss">
+@import "@/styles/main.css";
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Poppins, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -28,3 +28,16 @@ nav {
   }
 }
 </style>
+
+<script>
+import PreNavBar from "@/components/Layout/PreNavBar.vue";
+import NavBar from "@/components/Layout/NavBar.vue";
+
+export default {
+  name: "app",
+  components: {
+    PreNavBar,
+    NavBar,
+  },
+};
+</script>
